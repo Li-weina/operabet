@@ -1,0 +1,267 @@
+@import "reset";
+@bg-color:#2F2F33;
+@header-color:#202023;
+@line-color:#FE3641;
+@text-color:#FFF;
+@yellow-color:#FFE082;
+@height:44px;
+@low-height:32px;
+@sd-bg-color:#333337;
+@team-color:#424249;
+@list-color:#37373C;
+@time-color:#8E8E93;
+html,body{
+  min-height: 100%;
+  font:14px/1.4 Arial,Helvetica,'Hiragino Sans GB','Microsoft YaHei',sans-serif;
+  background: @bg-color;
+  color:@text-color ;
+}
+a,a:active,a:visited{
+  color: @text-color;
+}
+div,li,a{
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.yellow{
+    color: @yellow-color;
+}
+.head{
+    position: fixed;
+    top:0;
+    left: 0;
+    margin-bottom: 1px;
+    width: 100%;
+    height: @height;
+    background: @header-color;
+  .nav {
+    height: @height;
+    display: flex;
+    div, h1 {
+      display: flex;
+      width: 100%/3;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .in-play{
+    font-family: Helvetica-Light;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .head-login{
+    padding: 0 3%;
+    a{
+      flex: 1 auto;
+      text-align: center;
+    }
+  }
+  .join{
+    color:#B1B1B6;
+  }
+  .login{
+    color: #FE3F4A;
+  }
+  .line{
+    border-bottom: 3px solid @line-color;
+  }
+  h1{
+    a{
+      display: block;
+      width: 75%;
+    }
+
+  }
+}
+@media screen and (min-width: 500px) {
+  .head{
+    h1{
+      a{
+        -webkit-max-height:@height;
+        max-height: @height;
+        width: auto;
+        img{
+          -webkit-max-height:36px;
+          max-height: 36px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+.pad,.list>li>a{
+  padding: 0 14px;
+}
+.title{
+    height: 50px;
+    padding-top: 21px;
+    padding-bottom: 10px;
+    color: #8E8E93;
+    font-size: 16px;
+}
+.clear-fix{
+  margin-top: @height;
+}
+.list {
+  li>a {
+    width: 100%;
+    height: @height;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    background: @list-color;
+    font-size: 17px;
+    div{
+        display: flex;
+        align-items: center;
+      }
+    &.down{
+      .text{
+        margin-top: 7px;
+      }
+    }
+  }
+}
+.icon{
+  width: 24px;
+  height: 24px;
+  margin-right: 17px;
+  vertical-align: middle;
+}
+.arrow{
+  width: 8px;
+  height: 13px;
+  margin-top: -10px;
+}
+.sd-title{
+  height: @height;
+  background: @sd-bg-color;
+  font-size: 18px;
+  .back{
+    display: inline-block;
+    width: @height;
+    height: @height;
+  }
+  span{
+    vertical-align: middle;
+  }
+}
+.team{
+  margin-bottom: 1px;
+}
+
+.team-info{
+  height: @low-height;
+  background: @team-color;
+  display: flex;
+  justify-content: space-between;
+  .name,&>div{
+    display: flex;
+    align-items: center;
+  }
+  > div{
+    span{
+      margin-left: 4px;
+      &.sm-arrow{
+        margin-left: 8px;
+      }
+    }
+
+  }
+
+  .down-arrow{
+    width: 10px;
+    height: 7px;
+    margin-top: 7px;
+  }
+}
+.sm-arrow{
+  display: inline-block;
+  margin-left: 8px;
+  width: 8px;
+  height: 12px;
+  margin-top: -9px;
+}
+.mid-height{
+  height: 40px;
+  font-size: 16px;
+}
+.score{
+  margin-left: -1px;
+  display: flex;
+  justify-content: space-between;
+  > li{
+    flex: 1;
+    height: 70px;
+    margin-left: 1px;
+    //float: left;
+    background: @list-color;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    >p{
+      padding: 3px 0;
+    }
+
+  }
+  li.active{
+    background: #EFEFF4;
+    p{
+      &:first-child{
+        color: #FE3F4A;
+      }
+      &:nth-child(2){
+        color: #000;
+      }
+    }
+
+  }
+}
+.id{
+  height: @height;
+  display: flex;
+  align-items: center;
+  background: @list-color;
+  margin-bottom: 1px;
+}
+.credit {
+  margin-bottom: 10px;
+  li{
+    text-align: left;
+    height: 72px;
+    .yellow{
+      font-size: 19px;
+    }
+  }
+}
+.live-score{
+  li{
+    height: 96px;
+    &:not(.live-team):empty{
+      background: url("../image/locked.png") no-repeat center @list-color;
+      background-size: 15px 20px;
+    }
+
+  }
+  .live-team{
+    flex: 2.5;
+    a{
+      div{
+        display: flex;
+        justify-content: space-between;
+       margin: 4px 0;
+      }
+      .live-time{
+        color: @time-color;
+        span{
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

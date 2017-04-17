@@ -1,0 +1,435 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+button,
+input,
+textarea,
+th,
+td,
+i,
+img {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+body {
+  font-style: normal;
+  font-family: DroidSansFallback;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: #444;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover,
+a:active {
+  color: #444;
+  outline-width: 0;
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  border: 0;
+  height: 1px;
+}
+img {
+  border-style: none;
+  vertical-align: middle;
+}
+img:not([src]) {
+  display: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+html {
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+textarea,
+button,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+audio:not([controls]),
+video:not([controls]) {
+  display: none;
+  height: 0;
+}
+progress {
+  vertical-align: baseline;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  outline: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+textarea {
+  overflow: auto;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+.clear:after {
+  display: block;
+  height: 0;
+  content: "";
+  clear: both;
+}
+html,
+body {
+  min-height: 100%;
+  font: 14px/1.4 Arial, Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background: #2F2F33;
+  color: #FFF;
+}
+a,
+a:active,
+a:visited {
+  color: #FFF;
+}
+div,
+li,
+a {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.yellow {
+  color: #FFE082;
+}
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-bottom: 1px;
+  width: 100%;
+  height: 44px;
+  background: #202023;
+}
+.head .nav {
+  height: 44px;
+  display: flex;
+}
+.head .nav div,
+.head .nav h1 {
+  display: flex;
+  width: 33.33333333%;
+  align-items: center;
+  justify-content: center;
+}
+.head .in-play {
+  font-family: Helvetica-Light;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.head .head-login {
+  padding: 0 3%;
+}
+.head .head-login a {
+  flex: 1 auto;
+  text-align: center;
+}
+.head .join {
+  color: #B1B1B6;
+}
+.head .login {
+  color: #FE3F4A;
+}
+.head .line {
+  border-bottom: 3px solid #FE3641;
+}
+.head h1 a {
+  display: block;
+  width: 75%;
+}
+@media screen and (min-width: 500px) {
+  .head h1 a {
+    -webkit-max-height: 44px;
+    max-height: 44px;
+    width: auto;
+  }
+  .head h1 a img {
+    -webkit-max-height: 36px;
+    max-height: 36px;
+    width: auto;
+  }
+}
+.pad,
+.list > li > a {
+  padding: 0 14px;
+}
+.title {
+  height: 50px;
+  padding-top: 21px;
+  padding-bottom: 10px;
+  color: #8E8E93;
+  font-size: 16px;
+}
+.clear-fix {
+  margin-top: 44px;
+}
+.list li > a {
+  width: 100%;
+  height: 44px;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: space-between;
+  background: #37373C;
+  font-size: 17px;
+}
+.list li > a div {
+  display: flex;
+  align-items: center;
+}
+.list li > a.down .text {
+  margin-top: 7px;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 17px;
+  vertical-align: middle;
+}
+.arrow {
+  width: 8px;
+  height: 13px;
+  margin-top: -10px;
+}
+.sd-title {
+  height: 44px;
+  background: #333337;
+  font-size: 18px;
+}
+.sd-title .back {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+}
+.sd-title span {
+  vertical-align: middle;
+}
+.team {
+  margin-bottom: 1px;
+}
+.team-info {
+  height: 32px;
+  background: #424249;
+  display: flex;
+  justify-content: space-between;
+}
+.team-info .name,
+.team-info > div {
+  display: flex;
+  align-items: center;
+}
+.team-info > div span {
+  margin-left: 4px;
+}
+.team-info > div span.sm-arrow {
+  margin-left: 8px;
+}
+.team-info .down-arrow {
+  width: 10px;
+  height: 7px;
+  margin-top: 7px;
+}
+.sm-arrow {
+  display: inline-block;
+  margin-left: 8px;
+  width: 8px;
+  height: 12px;
+  margin-top: -9px;
+}
+.mid-height {
+  height: 40px;
+  font-size: 16px;
+}
+.score {
+  margin-left: -1px;
+  display: flex;
+  justify-content: space-between;
+}
+.score > li {
+  flex: 1;
+  height: 70px;
+  margin-left: 1px;
+  background: #37373C;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.score > li > p {
+  padding: 3px 0;
+}
+.score li.active {
+  background: #EFEFF4;
+}
+.score li.active p:first-child {
+  color: #FE3F4A;
+}
+.score li.active p:nth-child(2) {
+  color: #000;
+}
+.id {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  background: #37373C;
+  margin-bottom: 1px;
+}
+.credit {
+  margin-bottom: 10px;
+}
+.credit li {
+  text-align: left;
+  height: 72px;
+}
+.credit li .yellow {
+  font-size: 19px;
+}
+.live-score li {
+  height: 96px;
+}
+.live-score li:not(.live-team):empty {
+  background: url("../image/locked.png") no-repeat center #37373C;
+  background-size: 15px 20px;
+}
+.live-score .live-team {
+  flex: 2.5;
+}
+.live-score .live-team a div {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+}
+.live-score .live-team a .live-time {
+  color: #8E8E93;
+}
+.live-score .live-team a .live-time span {
+  vertical-align: middle;
+}
